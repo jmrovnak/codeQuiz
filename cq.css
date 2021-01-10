@@ -1,3 +1,10 @@
 h3 {
-    background-color: blue;
+    background-color: rgb(151, 151, 184);
+    font-size: 36px;
+    text-align: center;
 }
+
+p {
+    text-align: center;
+}
+
