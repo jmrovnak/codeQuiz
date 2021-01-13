@@ -16,26 +16,28 @@ var quizQuestions = [
     }
 
 ];
-var secondsLeft = 60;
-var holdInterval = 0;
-var penalty = 10;
 
-var currentTime = $("#currentTime");
-var content = $("#content");
-var holdQuestions =$("#holdQuestions");
-var startTimer = $("#startTimer");
 
-$("#startTimer").on("click", function() {
-    if (holdInterval == 0) {
-        holdInterval == setInterval(function(){
-            secondsLeft--;
-            currentTime.textContent = "Time remaining: " + secondsLeft;
+var sec = 5;
+var time = setInterval(timer, 1000);
 
-    if (secondsLeft = 0) {
-        clearInterval(holdInterval);
-            finished();
-            currentTime.textContent = "Time is up.";
+function timer() {
+    document.getElementById('timer').innerHTML = sec;
+    sec--;
+    if (sec == -1) {
+        clearInterval(time);
+        console.log("Out of time.");
     }
-        })
-    }
-});
+}
+
+
+
+
+
+
+
+
+
+
+
+
