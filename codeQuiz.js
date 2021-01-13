@@ -15,4 +15,11 @@ var quizQuestions = [
         "correct": "6"
     }
 
-]
+];
+
+var currentTime = $("#currentTime");
+var content = $("#content");
+var holdQuestions =$("#holdQuestions");
+var startTimer = $("#startTimer");
+
+
