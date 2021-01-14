@@ -132,7 +132,15 @@
             }
         }
         
-        
+        if (quizQuestions[questionCount].correct == event.target.value) {
+            p.textContent = "You are correct.";
+
+        }
+
+        else if (quizQuestions[questionCount].correct !== event.target.value) {
+            timeRemaining = timeRemaining - 10;
+            p.textContent = "Sorry.";
+        }
 
 
 
