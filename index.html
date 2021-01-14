@@ -83,6 +83,14 @@
 
 ];
 
+        var timeEl = document.querySelector("p.time");
+        var scoreEl = document.querySelector("#score");
+        var timeRemaining = 75
+
+        var questionsEl = document.querySelector("#quizQuestions");
+        var questionEl = document.querySelector("#question");
+        var questionCount = 0;
+        var yesornoEl = document.querySelector("#yesOrNo");
 
         function setTime() {
             var timerInterval = setInterval(function () {
