@@ -122,7 +122,15 @@
             
         }
 
-        function set
+        function setQuestion(id) {
+            if (id < quizQuestions.length) {
+                questionEl.textContent = quizQuestions[id].question;
+                answerOne.textContent = quizQuestions[id].options[0];
+                answerTwo.textContent = quizQuestions[id].options[1];
+                answerThree.textContent = quizQuestions[id].options[2];
+                answerFour.textContent = quizQuestions[id].options[3];
+            }
+        }
         
 
 
